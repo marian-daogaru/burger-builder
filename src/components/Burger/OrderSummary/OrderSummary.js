@@ -14,7 +14,6 @@ const orderSummary = (props) => {
       )
     })
 
-
   return (
     <Aux>
       <h3>Your order</h3>
@@ -22,6 +21,7 @@ const orderSummary = (props) => {
       <ul>
         {ingredientSummary}
       </ul>
+      <p><strong>Total Price: ${props.totalPrice.toFixed(2)}</strong></p>
       <p>Continue to checkout?</p>
       <Button
         clicked={props.purchaseCanceled}
